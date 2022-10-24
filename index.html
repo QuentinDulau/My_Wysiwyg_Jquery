@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My_Wysiwyg</title>
+</head>
+<body>
+<div id="textarea"></div>
+<div id="editor"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="my_wysiwyg.js"></script>
+<script>
+    $(function () {
+        $('#textarea').my_wysiwyg({
+            buttons: ["bold", "italic", "strike through", "fore color",
+                "font size", "link", "outdent", "indent", "align left",
+                "align right", "align center", "align justify", "source code",
+                "save", "image"]
+        })
+    })
+</script>
+</body>
+</html>
